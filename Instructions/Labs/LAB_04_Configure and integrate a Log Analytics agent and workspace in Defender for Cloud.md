@@ -1,7 +1,7 @@
 ---
 lab:
-  title: 演習 04 - Log Analytics エージェントを使用してワークロードからデータを収集する
-  module: Module 04 - Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
+  title: 演習 04 - Log Analytics エージェントを構成して Defender for Cloud のワークスペースと統合する
+  module: Module 05 - Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
 ---
 
 
@@ -12,7 +12,7 @@ Defender for Cloud は、セキュリティの脆弱性と脅威を監視する�
 
 ---
 
-## スキル タスク
+## スキルアップ タスク
 
 - エージェントの種類に対して Log Analytics エージェントの既定値を使用します。
 
