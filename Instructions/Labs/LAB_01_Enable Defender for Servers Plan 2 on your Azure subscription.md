@@ -24,36 +24,20 @@ lab:
 
 1. [[Azure portal]](https://portal.azure.com/) のメニューにサインインします。
 
-2. Azure portal の [リソース、サービス、ドキュメントの検索] テキスト ボックスで、Azure portal ページの上部に「Microsoft Defender for Cloud」と入力し、Enter キーを押します。
+2. Azure portal において、Azure portal ページの上部にある [リソース、サービス、ドキュメントの検索] テキスト ボックスに、「**Microsoft Defender for Cloud**」と入力し、**Enter** キーを押します。
 
-3. **Microsoft Defender for Cloud** の **[管理] ブレード**で、**[環境設定]** に移動します。 **[Ignite サブスクリプション]** セクションが表示されるまで環境設定フォルダーを展開し、**[Ignite サブスクリプション]** をクリックして詳細を表示します。
+3. **Microsoft Defender for Cloud** の **[管理] ブレード**で、**[環境設定]** に移動します。 **サブスクリプション** セクションが表示されるまで環境設定フォルダーを展開し、**サブスクリプション**をクリックして詳細を表示します。
 
-4. ご利用の **[サブスクリプション]** と、モジュール 02 で作成した **[Log Analytics ワークスペース]** を選択して、Microsoft Defender プランを有効にします。
-
-5. ページの下部にある大きな青い **[アップグレード]** ボタンをクリックします。
+   ![image](https://github.com/user-attachments/assets/32d2168e-458f-4872-9bf8-e8f050f24751)
    
-    ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/256bd584-b04f-4d5b-81a7-c83dd1af3b4f)
+3. **[設定]** ブレードの **[Defender プラン]** で、**[クラウド ワークロード保護 (CWP)]** を展開します。
+
+4. **クラウド ワークロード保護 (CWP) プラン**の一覧から **[サーバー]** を選択します。 ページの右側で、**[状態]** を **[オフ]** から **[オン]** に変更し、**[保存]** をクリックします。
+
+5. **[サーバー プラン 2]** の詳細を確認するには、**[プランの変更]** を選択します。
+
+   注: クラウド ワークロード保護 (CWP) サーバー プランをオフからオンにすると、Microsoft Defender for Servers プラン 2 が有効になります。
+
+   ![image](https://github.com/user-attachments/assets/869a38e4-464e-4be0-b02e-ce1b96f02978)
    
-6. **[Microsoft Defender for Cloud]** の **[はじめに]** ブレードで **[エージェントのインストール]** タブに移動して下へスクロールします。
-
-    ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/8120ec8f-23dc-4636-bc45-b415c7894b8c)
-
-7. エージェントをインストールするサブスクリプションに関連付けられたチェックボックスをオンにし、**[エージェントのインストール]** をクリックします。
-
-### Microsoft Defender for Cloud のサブスクリプションをアップグレードするための代替アクション。
-
-1. **[Microsoft Defender for Cloud]** に移動し、[管理] セクションの下にある左側のナビゲーション パネルで **[環境の設定]** をクリックします。
-   
-2. **[Microsoft Defender for Cloud] の [環境設定]** ブレードで **[すべて展開]** をクリックし、サブスクリプションが表示されるまで下にスクロールし、関連するサブスクリプションをクリックします。
-
-3. **[設定] の [Defender プラン]** ブレードで **[すべてのプランを有効にする]** を選択し、**[保存]** をクリックします。
-
-   ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/4b684851-98ae-4720-a3e3-afa99aab8c43)
-
-
-
-
-   
-
-   
-> **結果**: Azure サブスクリプションで Defender for Cloud がアップグレードされ、有効になりました。
+> **結果**: サブスクリプションで Microsoft Defender for Servers プラン 2 が有効になりました。
