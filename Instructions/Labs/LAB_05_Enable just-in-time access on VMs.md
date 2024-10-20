@@ -24,13 +24,13 @@ Microsoft Defender for Cloud の Just-In-Time (JIT) アクセスを使用して�
 
 >**注**: Azure portal の Azure 仮想マシンページから、VM 上の JIT を有効にすることができます。
 
-1. Azure portal で、**[仮想マシン]** を検索して選択します。
+1. ポータルの上部にある検索ボックスに、「**仮想マシン**」と入力します。 検索結果から **[仮想マシン]** を選択します。
+
+2. **vm-1** を選択します。
+ 
+3. vm-1 の **[設定]** セクションから **[構成]** を選択します。
    
-2. JIT で保護する仮想マシンを選択します。
-
-3. メニューで **[構成]** を選択します。
-
-4. **[Just-In-Time アクセス]** で、 **[Just-In-Time を有効にする]** を選択します。
+4. **[Just-In-Time アクセス]** で、**[Just-In-Time を有効にする]** を選択します。
 
 5. 「**Just-in-time VM アクセス**」で、**[Microsoft Defender for Cloud を開く]** というリンクをクリックします。
 
@@ -52,9 +52,6 @@ Microsoft Defender for Cloud の Just-In-Time (JIT) アクセスを使用して�
    - **[構成済み]** タブで、ポートを追加する VM を右クリックして、[編集] を選択します。
   
  ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/66cf98b6-2ce0-43c7-a7be-b5d69bcfac1d)
-
-
-
 
    - **[JIT VM アクセス構成]** では、既に保護されているポートの既存の設定を編集するか、新しいカスタム ポートを追加できます。
    - ポートの編集が終わったら、 **[保存]** を選択します。   
