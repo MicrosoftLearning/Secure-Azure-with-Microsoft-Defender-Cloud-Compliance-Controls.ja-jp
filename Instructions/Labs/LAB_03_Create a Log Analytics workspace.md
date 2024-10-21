@@ -1,7 +1,7 @@
 ---
 lab:
-  title: 演習 03 - Microsoft Defender for Cloud 用の Log Analytics ワークスペースを作成する
-  module: Module 04 - Create a Log Analytics workspace for Microsoft Defender for Cloud
+  title: 演習 03 - Log Analytics ワークスペースを作成する
+  module: Module 04 - Create a Log Analytics workspace
 ---
 
 
@@ -26,21 +26,21 @@ lab:
    
 2. Azure portal メニューの検索ボックスに「**Log Analytics ワークスペース**」と入力します。 入力を始めると、入力内容に基づいて、一覧がフィルター処理されます。 **[Log Analytics ワークスペース]** を選択します。
 
-4. **［作成］** を選択します
+4. **[Log Analytics ワークスペース]** ページで、**[+ 作成]** を選択します。
 
-5. **[Log Analytics ワークスペースの作成]** の **[基本]** タブで、次の情報を入力するか選びます。
+5. **[Log Analytics ワークスペースの作成]** の **[基本]** ページで、次の情報を入力または選択します。
    
    |設定|値|
    |---|---|
    |**プロジェクトの詳細**|
    |サブスクリプション|サブスクリプションを選択します。|
-   |Resource group|「**azure-rg-1**」と入力します。 **[OK]** を選択します。|
+   |Resource group|「**azure-rg-1**」と入力します。|
    |**インスタンスの詳細**|
    |名前|「**azwrkspc1a**」と入力します。|
    |リージョン|**[米国東部]** を選択します。|
 
-6. **[確認および作成]** タブを選ぶか、ページの下部にある青い [確認および作成] ボタンを選びます。
+6. ページの下部にある **[確認および作成]** ボタンを選択します。
   
 8. **［作成］** を選択します
 
-> **結果:** Azure リソースからデータを収集し、Azure Storage から診断データやログ データを収集するための Log Analytics ワークスペースが作成されました。
+> **結果:** Azure リソースからデータを収集するための Log Analytics ワークスペースが作成されました。
