@@ -121,11 +121,9 @@ Azure プライベート エンドポイントは、Azure における Private L
    |---|---|
    |**ネットワーク インターフェイス**|
    |仮想ネットワーク|**[vnet-2]** を選択します。|
-   |Subnet|**[subnet-2 (10.0.0.0/24)]** を選択します。|
-   |パブリック IP|**[なし]** を選択します。|
-   |NIC ネットワーク セキュリティ グループ|**[Basic]** を選択します。|
-   |パブリック受信ポート|**[なし]** を選択します。|
-   |受信ポートの選択|既定の設定はグレー表示されます。|
+   |Subnet|既定の設定 subnet-2 (10.0.0.0/24) のままにします。|
+   |パブリック IP|既定の設定の [(新規) vm-3-ip] のままにします。|
+   |NIC ネットワーク セキュリティ グループ|既定の設定の [なし] のままにします。|
    |VM が削除された場合に NIC を削除する|既定の設定である [高速ネットワークを有効にする] がオンのままにします。|
    |負荷分散|既定の設定の [なし] のままにします。|
   
@@ -189,25 +187,25 @@ Azure プライベート エンドポイントは、Azure における Private L
 
 10. **[プライベート エンドポイントの作成]** で、次の情報を入力または選択します。
 
-   |設定|値|
-   |---|---|
-   |サブスクリプション|サブスクリプションを選択します。|
-   |Resource group|**az-rg-1** を選択します。|
-   |場所|**[米国東部]** を選択します。|
-   |Name|「**az-pe1a**」と入力します。|
-   |ターゲット サブリソース|既定の設定の [SqlServer] のままにします。|
-   |**ネットワーク**|
-   |仮想ネットワーク|**[vnet-2]** を選択します。|
-   |Subnet|**[subnet-2]** を選択します。|
-   |**プライベート DNS の統合**|
-   |プライベート DNS ゾーンとの統合|既定の設定の [はい] のままにします。|
-   |プライベート DNS ゾーン|既定の設定の [(新規) privatelink.database.windows.net] のままにします。|
+       |設定|値|
+       |---|---|
+       |サブスクリプション|サブスクリプションを選択します。|
+       |Resource group|**az-rg-1** を選択します。|
+       |場所|**[米国東部]** を選択します。|
+       |Name|「**az-pe1a**」と入力します。|
+       |ターゲット サブリソース|既定の設定の [SqlServer] のままにします。|
+       |**ネットワーク**|
+       |仮想ネットワーク|**[vnet-2]** を選択します。|
+       |Subnet|**[subnet-2]** を選択します。|
+       |**プライベート DNS の統合**|
+       |プライベート DNS ゾーンとの統合|既定の設定の [はい] のままにします。|
+       |プライベート DNS ゾーン|既定の設定の [(新規) privatelink.database.windows.net] のままにします。|
 
-11. **[OK]** を選択します。
+12. **[OK]** を選択します。
 
-12. **[Review + create](レビュー + 作成)** を選択します。
+13. **[Review + create](レビュー + 作成)** を選択します。
 
-13. **［作成］** を選択します
+14. **［作成］** を選択します
 
 >**注**: Azure SQL サーバーとプライベート エンドポイントのデプロイは、完全なインスタンス化に最大 10 分かかる場合があります。
 
@@ -226,10 +224,10 @@ Azure プライベート エンドポイントは、Azure における Private L
 >**注**: 以下の [ファイアウォール規則] セクションで構成されている IP アドレスからの接続は、このデータベースにアクセスできます。 既定では、パブリック IP アドレスは許可されていません。
 
 5. 必要に応じて、**[ネットワーク]** ページの **[ファイアウォール規則]** セクションに移動し、クライアント IP アドレスが **"規則名"**、**"開始 IPv4 アドレス"**、および **"終了 IPv4 アドレス"** フィールドにまだ設定されていない場合は、**[+ クライアント IPv4 アドレスの追加]** を選択します。
-    
-     ![image](https://github.com/user-attachments/assets/dfdeffca-d33f-44e1-81db-9f68a51f89df)
 
-6. 必要に応じて、**[保存]** を選択します。
+   ![image](https://github.com/user-attachments/assets/fff5bfb1-53fd-40ea-9a31-5a095e7f3dbc) 
+
+7. **[保存]** を選択します。
 
 ### プライベート エンドポイントへの接続のテスト
 
@@ -241,48 +239,49 @@ Azure プライベート エンドポイントは、Azure における Private L
 
 3. 仮想マシンの作成時に入力したユーザー名「**Tenantadmin2**」とパスワード「**Superuser#170**」を入力します。
 
-   **重要:** [接続] を選択する前に、[Edge の設定]、[ポップアップとリダイレクト] に移動し、[ブロック] スイッチを **[オフ]** に切り替えます。
+   **重要:** 重要: Edge の設定に移動し、**ポップアップとリダイレクト**に移動します。 「**https://portal.azure.com からのポップアップとリダイレクトを常に許可する**」というラベルの付いた放射状オプションを選択し、**[完了]** をクリックします。
 
 4. **[接続]** ボタンを選択します。
   
 5. 接続後にサーバーで Windows PowerShell を開きます。
 
-6. **sqlserver-name** を、前の手順で作成した SQL サーバーの名前に置き換えます。 たとえば、「**nslookup az-sql-srv1a.database.windows.net**」と入力すると、次のようなメッセージが表示されます。
+6. プライベート エンドポイントの名前解決を確認するには、ターミナル ウィンドウで次のコマンドを入力します。
+
+   ```bash
+   nslookup server-name.database.windows.net
+
+>**Note**: Replace **sqlserver-name** with the name of the SQL server you created in the previous steps. For example, enter **nslookup az-sql-srv1a.database.windows.net** You’ll receive a message similar to the one shown below:
 
    ````
    
-   Server:  UnKnown
-   Address:  168.63.129.16
+   サーバー: 不明なアドレス: 168.63.129.16
    
-   Non-authoritative answer:
-   Name:    az-sql-srv1a.privatelink.database.windows.net
-   Address:  10.1.0.5
-   Aliases:  az-sql-srv1a.database.windows.net
+   権限のない回答: Name:    az-sql-srv1a.privatelink.database.windows.net Address:  10.1.0.5 Aliases:  az-sql-srv1a.database.windows.net
    ````
    
->**注**: SQL サーバー名には 10.1.0.5 というプライベート IP アドレスが返されます。 このアドレスは、前に作成した **vnet-2** 仮想ネットワークの **az-sql-srv1a** サブネットにあります。
+>**Note**: A  private IP address of 10.1.0.5 is returned for the SQL server name. This address is in **az-sql-srv1a** subnet of **vnet-2** virtual network you created previously.
 
-7. [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) を **vm-3** にインストールします。
+7. Install [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) on **vm-3.**
  
-8. **SQL Server Management Studio** を開きます。
+8. Open **SQL Server Management Studio.**
 
-9. **[サーバーに接続]** で、次の情報を入力または選択します。
+9. In **Connect to server,** enter or select this information:
 
-    |設定|値|
+    |Setting|Value|
     |---|---|
-    |サーバーの種類|**データベース エンジン**を選択します。|
-    |サーバー名|「**az-sql-srv1a.database.windows.net**」と入力します。|
-    |認証|**[SQL Server 認証]** を選択します。|
-    |ユーザー名|「**Tenantadmin2**」と入力します。|
-    |Password|「**Superuser#170**」と入力します。|
-    |パスワードを保存する|**[はい]** を選択します。|
-    |接続セキュリティ|
-    |暗号化|既定の設定は [必須] のままにします。|
+    |Server type|Leave the default setting as Database Engine.|
+    |Server name|Enter **az-sql-srv1a.database.windows.net.**|
+    |Authentication|Select **SQL Server Authentication.**|
+    |User name|Enter **Tenantadmin2**.|
+    |Password|Enter **Superuser#170**.|
+    |Remember password|Select **Yes.**|
+    |Connectivity Security|
+    |Encryption|Leave the default setting as Mandatory.|
    
-10. **[接続]** を選択します。
+10. Select **Connect.**
 
-11. 左側のメニューでデータベースを参照します。
+11. Browse databases from left menu.
 
-12. vm-3 へのリモート デスクトップ接続を閉じます。
+12. Close the remote desktop connection to vm-3.
   
-> **結果**: Azure portal から Azure プライベート エンドポイントを使用して Azure SQL サーバーに接続しました。
+> **Results**: You have connected to an Azure SQL server using an Azure Private Endpoint using the Azure portal.
