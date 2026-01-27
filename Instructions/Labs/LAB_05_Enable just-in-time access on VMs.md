@@ -15,8 +15,9 @@ Microsoft Defender for Cloud の Just-In-Time (JIT) アクセスを使用して�
 ## スキルアップ タスク
 
 - Azure portal から VM で JIT を有効にする
-
 - Azure portal から JIT が有効になっている VM へのアクセスを要求します。
+
+### ラボの推定所要時間: 7 分
 
 ## 演習の手順 
 
@@ -64,7 +65,7 @@ Microsoft Defender for Cloud の Just-In-Time (JIT) アクセスを使用して�
    
 1. Azure portal で仮想マシンのページを開きます。
 
-2. 接続先の VM を選択し、 **[接続]** ページを開きます。
+2. 接続先の VM を選択し、**[接続]** ページを開きます。
 
    - Azure により、その VM で JIT が有効になっているかどうかが確認されます。
 
