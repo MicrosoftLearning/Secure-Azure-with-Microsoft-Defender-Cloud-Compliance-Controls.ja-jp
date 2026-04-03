@@ -2,8 +2,15 @@
 lab:
   title: 演習 01 - サーバー用に Microsoft Defender for Cloud の強化されたセキュリティ機能を構成する
   module: Module 02 - Enable Defender for Cloud on Your Azure Subscription
+  description: この演習の主な目標は、Azure サブスクリプション内で Microsoft Defender for Servers プラン 2 を構成および有効化する実践的な体験を提供することです。 これにより、クラウド リソースを監視し、セキュリティ上の脅威から保護することができます。
+  duration: 5 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+    - Microsoft Defender
+    - Microsoft Defender for Cloud
 ---
-
 
 >**注**: このラボを完了するには、[Azure サブスクリプション](https://azure.microsoft.com/en-us/free/?azure-portal=true)が必要です。 管理アクセス権を持つ。 
 
