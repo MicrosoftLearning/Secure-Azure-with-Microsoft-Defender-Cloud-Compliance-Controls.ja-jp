@@ -2,10 +2,17 @@
 lab:
   title: 演習 07 - Azure portal を使用して Azure プライベート エンドポイント経由で Azure SQL サーバーに接続する
   module: Module 08 - Connect to an Azure SQL server using an Azure Private Endpoint using the Azure portal
+  description: このラボでは、SQL サーバー用に Azure の Private Link で Azure プライベート エンドポイントを使います。 これにより、仮想マシン (VM) などの Azure リソースは、Azure SQL サーバーなどの Private Link リソースと非公開かつ安全に通信できます。
+  duration: 20 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Portal
+    - SQL Server
 ---
 
-
->**注**: このラボを完了するには、管理者アクセス権のある [Azure サブスクリプション](https://azure.microsoft.com/en-us/free/?azure-portal=true) が必要です。 
+>**注**: このラボを完了するには、[Azure サブスクリプション](https://azure.microsoft.com/en-us/free/?azure-portal=true)が必要です。 が必要です。 
 
 
 Azure プライベート エンドポイントは、Azure における Private Link の基本的な構成要素です。 これにより、仮想マシン (VM) などの Azure リソースは、Azure SQL サーバーなどの Private Link リソースと非公開かつ安全に通信できます。

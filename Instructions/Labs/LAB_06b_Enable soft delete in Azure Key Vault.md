@@ -2,8 +2,14 @@
 lab:
   title: 演習 06b - Azure Key Vault で論理的な削除を有効にする
   module: Module 07 - Configure Azure Key Vault networking settings
+  description: このラボでは、Azure Key Vault の設定を使って、Azure Key Vault で論理的な削除を確実に有効にします。
+  duration: 5 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Key Vault
 ---
-
 
 >**注**: このラボを完了するには、[Azure サブスクリプション](https://azure.microsoft.com/en-us/free/?azure-portal=true)が必要です。 管理アクセス権を持つ。 
 

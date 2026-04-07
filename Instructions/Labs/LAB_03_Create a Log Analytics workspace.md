@@ -2,8 +2,11 @@
 lab:
   title: 演習 03 - Log Analytics ワークスペースを作成する
   module: Module 04 - Create a Log Analytics workspace
+  description: このラボでは、ログ、データ、情報を収集し、それをワークスペースに格納します。 ワークスペースには、一意のワークスペース ID とリソース ID があります。 ワークスペースを作成したら、データ ソースとソリューションのデータをそこに保存するように構成します。
+  duration: 5 minutes
+  level: 200
+  islab: true
 ---
-
 
 >**注**: このラボを完了するには、[Azure サブスクリプション](https://azure.microsoft.com/en-us/free/?azure-portal=true)が必要です。 が必要です。 
 
