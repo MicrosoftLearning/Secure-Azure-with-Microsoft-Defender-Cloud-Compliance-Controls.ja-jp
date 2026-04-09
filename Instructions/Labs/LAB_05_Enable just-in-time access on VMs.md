@@ -2,10 +2,18 @@
 lab:
   title: 演習 05 - VM 上で Just-In-Time アクセスを有効にする
   module: Module 06 - Explore just-in-time VM access
+  description: Microsoft Defender for Cloud の Just-In-Time (JIT) アクセスを使って、Azure 仮想マシン (VM) を認可されていないネットワーク アクセスから保護します。 多くの場合、ファイアウォールには、VM が攻撃に対して脆弱なままにする許可規則が含まれています。 JIT を使用すると、アクセスが必要な場合、必要なポート、必要な期間だけ VM へのアクセスを許可できます。
+  duration: 7 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Machines
+    - Microsoft Defender
+    - Microsoft Defender for Cloud
 ---
 
-
->**注**: このラボを完了するには、管理者アクセス権のある [Azure サブスクリプション](https://azure.microsoft.com/en-us/free/?azure-portal=true) が必要です。 
+>**注**: このラボを完了するには、[Azure サブスクリプション](https://azure.microsoft.com/en-us/free/?azure-portal=true)が必要です。 が必要です。 
 
 
 Microsoft Defender for Cloud の Just-In-Time (JIT) アクセスを使用して、Azure 仮想マシン (VM) を未承認のネットワーク アクセスから保護できます。 多くの場合、ファイアウォールには、VM が攻撃に対して脆弱なままにする許可規則が含まれています。 JIT を使用すると、アクセスが必要な場合、必要なポート、必要な期間だけ VM へのアクセスを許可できます。 

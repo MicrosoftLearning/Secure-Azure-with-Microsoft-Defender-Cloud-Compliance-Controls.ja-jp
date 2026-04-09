@@ -2,10 +2,17 @@
 lab:
   title: 演習 06a - Azure Key Vault のネットワーク設定を構成する
   module: Module 07 - Configure Azure Key Vault networking settings
+  description: このラボでは、Azure portal を使って、他のアプリケーションや Azure サービスと連携するように Azure Key Vault ネットワークの設定を構成します。
+  duration: 10 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Key Vault
+    - Azure Portal
 ---
 
-
->**注**: このラボを完了するには、管理者アクセス権のある [Azure サブスクリプション](https://azure.microsoft.com/en-us/free/?azure-portal=true) 管理アクセス権を持つ。 
+>**注**: このラボを完了するには、[Azure サブスクリプション](https://azure.microsoft.com/en-us/free/?azure-portal=true)が必要です。 管理アクセス権を持つ。 
 
 
 Azure portal を使用して、他のアプリケーションや Azure サービスと連携するように Azure Key Vault ネットワーク設定を構成することができます。 
